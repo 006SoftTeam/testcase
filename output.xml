@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.6 on darwin)" generated="2025-02-27T08:36:47.432455" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Web" source="/Users/surachatrueangtara/Downloads/automate-future-skill/test_web.robot">
+<test id="s1-t1" name="Test Click Link And Verify Submission" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:47.591233" level="INFO">Opening browser 'Chrome' to base url 'https://www.selenium.dev/selenium/web/click_tests/click_iframe.html'.</msg>
+<arg>${URL_IFRAME}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-27T08:36:47.590907" elapsed="1.645149"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.236893" elapsed="0.306760"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@id='link']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.544047" elapsed="0.029014"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:49.573754" level="INFO">Clicking element 'xpath=//a[@id='link']'.</msg>
+<arg>xpath=//a[@id='link']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.573418" elapsed="0.170179"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Submitted Successfully!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.743937" elapsed="0.017661"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:49.990126" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.761970" elapsed="0.228324"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-27T08:36:49.990806" elapsed="0.107844"/>
+</kw>
+<status status="PASS" start="2025-02-27T08:36:47.589717" elapsed="2.509538"/>
+</test>
+<test id="s1-t2" name="Test Fill And Submit Web Form" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:50.100930" level="INFO">Opening browser 'Chrome' to base url 'https://www.selenium.dev/selenium/web/web-form.html'.</msg>
+<arg>${URL_FORM}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-27T08:36:50.100625" elapsed="1.791958"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-27T08:36:51.893452" elapsed="0.301712"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.195871" level="INFO">Typing text 'Test Input' into text field 'id=my-text-id'.</msg>
+<arg>id=my-text-id</arg>
+<arg>Test Input</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.195452" elapsed="0.198132"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.394371" level="INFO">Typing text 'Secret123' into text field 'xpath=//input[@type='password']'.</msg>
+<arg>xpath=//input[@type='password']</arg>
+<arg>Secret123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.394053" elapsed="0.094804"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.489438" level="INFO">Typing text 'This is a test message.' into text field 'xpath=//textarea[@name='my-textarea']'.</msg>
+<arg>xpath=//textarea[@name='my-textarea']</arg>
+<arg>This is a test message.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.489189" elapsed="0.120058"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.610220" level="INFO">Selecting options from selection list 'xpath=//select[@name='my-select']' by label Two.</msg>
+<arg>xpath=//select[@name='my-select']</arg>
+<arg>Two</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.609762" elapsed="0.104920"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.715277" level="INFO">Clicking element 'id=my-check-1'.</msg>
+<arg>id=my-check-1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.715002" elapsed="0.065115"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.780609" level="INFO">Clicking element 'id=my-radio-2'.</msg>
+<arg>id=my-radio-2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.780354" elapsed="0.056104"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:52.836956" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-27T08:36:52.836688" elapsed="0.176420"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>submitted-form.html</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-02-27T08:36:53.013391" elapsed="0.008086"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Received!</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-27T08:36:53.021953" elapsed="0.017570"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-27T08:36:53.270180" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-27T08:36:53.039915" elapsed="0.230372"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-27T08:36:53.270526" elapsed="0.113803"/>
+</kw>
+<status status="PASS" start="2025-02-27T08:36:50.099810" elapsed="3.284921"/>
+</test>
+<status status="PASS" start="2025-02-27T08:36:47.434553" elapsed="5.951188"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Web" id="s1" pass="2" fail="0" skip="0">Test Web</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
